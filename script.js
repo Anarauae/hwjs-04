@@ -23,11 +23,7 @@
 // let bez = b*112;
 // let summ = Number (+ suv+bez);
 
-// document.write(a +" - suvenire <br>");
-// document.write(b +" - bezdelushka <br>");
-// document.write(suv.toFixed(2) +" gramm <br>");
-// document.write(bez.toFixed(2) +" gramm<br>");
-// document.write(summ.toFixed(2) +" gramm<br>");
+// document.write("Итог: " + summ.toFixed(2) + " gramm");
 
 
 
@@ -38,16 +34,17 @@
 // Все суммы должны быть округлены до двух знаков после запятой.
 
 let Deposit=prompt("Введите суммы вашего депозита:");
-const percentage=0.04;
-let depositAmount=Number(Deposit);
-let firstYearEnd=depositAmount*percentage+depositAmount;
-let secondYearEnd=firstYearEnd*percentage+firstYearEnd;
-let thirdYearEnd=secondYearEnd*percentage+secondYearEnd;
+const percentage = 0.04;
+
+let firstYearEnd= Deposit * percentage + + Deposit;
+let secondYearEnd= firstYearEnd * percentage + + firstYearEnd;
+let thirdYearEnd= secondYearEnd * percentage + + secondYearEnd;
 
 
-document.write(`<h3>Сумма на счету первый год: ${firstYearEnd.toFixed(2)}</h3>`)
-document.write(`<h3>Сумма на счету второй год: ${secondYearEnd.toFixed(2)}</h3>`);
-document.write(`<h3>Сумма на счету третий год: ${thirdYearEnd.toFixed(2)}</h3>`);
+document.write("<h3>" + "Сумма на счету первый год:" + firstYearEnd.toFixed(2) + "</h3>" +  "<br>");
+document.write("<h3>" + "Сумма на счету второй год:" + secondYearEnd.toFixed(2) + "</h3>" +  "<br>");
+document.write("<h3>" + "Сумма на счету третий год:" + thirdYearEnd.toFixed(2) + "</h3>" +  "<br>");
+
 
 
 //task4
@@ -64,18 +61,22 @@ let firstNumber=prompt("Введите целое число а:");
 let secondNumber=prompt("Введите целое число b:");
 let a=Number(firstNumber);
 let b=Number(secondNumber);
+
 let sum=a+b;
-
-
 document.write("Сумма:"+sum +"<br>");
+
 let substract=a-b;
 document.write("Разница:"+substract +"<br>");
+
 let multiply=a*b;
 document.write("Произведение:"+multiply +"<br>");
+
 let divide=a/b;
 document.write("Деление:"+divide + "<br>");
+
 let residual=a%b;
 document.write("Остаток от деления:"+residual+"<br>");
+
 let exponentiation=a**b;
 document.write("Степень:"+exponentiation);
 
